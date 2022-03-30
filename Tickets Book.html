@@ -1,0 +1,197 @@
+<html>
+<head>
+<style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+<meta charset="UTF-8">
+
+  <title>Home </title>
+</head>
+<body>
+
+<table border="0" align="center" width="100%" cellspacing="0" cellpadding="10">
+<tr height="120px" background="image/1.jpg">
+<td colspan="3" align="center"> <h1>Welcome!!</h1></td>
+
+</tr>
+
+<tr height="50px" bgcolor="yellow">
+<td colspan="3">
+<a href="Home Page.html">Home</a>&nbsp; &nbsp;&nbsp;|
+<a href="Gallery.html">Forms</a>&nbsp;&nbsp;&nbsp;|
+<a href="Contact Us.html">Contact us</a>&nbsp;&nbsp;&nbsp;|
+<a href="aboutus.html">About US</a>&nbsp;&nbsp;&nbsp;
+</tr>
+
+<tr height="400px">
+<td bgcolor="green" width="20%" valign="top"  align="center">
+
+<h3 align="center"><font color="#fff">Login here</font> </h3>
+
+<p>ID  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<input type="text"/></p>
+<p>
+Password :<input type="password"/></p>
+
+<img src="flower.gif" width="200px" height="250" align="center"/><br><br>
+<mark>To Book Online</mark>
+link:-<a href="https://rb.nic.in/rbvisit/rbvisit_mughal.aspx">
+<b>Click Here</b></a>
+</td>
+<td width="60%" valign="top">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="flower.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="image.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="beauty.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<p align="justify">
+Mughal gardens design derives primarily from the medieval Islamic garden, although there are nomadic influences that come from the Mughals’ Turkish-Mongolian ancestry. Julie Scott Meisami describes the medieval Islamic garden as "a hortus conclusus, walled off and protected from the outside world; within, its design was rigidly formal, and its inner space was filled with those elements that man finds most pleasing in nature. Its essential features included running water (perhaps the most important element) and a pool to reflect the beauties of sky and garden; trees of various sorts, some to provide shade merely, and others to produce fruits; flowers, colorful and sweet-smelling; grass, usually growing wild under the trees; birds to fill the garden with song; the whole is cooled by a pleasant breezes.</p>
+<p>The garden might include a raised hillock at the center, reminiscent of the mountain at the center of the universe in cosmological descriptions, and often surmounted by a pavilion or palace."[16] The Turkish-Mongolian elements of the Mughal garden are primarily related to the inclusion of tents, carpets and canopies reflecting nomadic roots. Tents indicated status in these societies, so wealth and power were displayed through the richness of the fabrics as well as by size and number.</p>
+</td>
+<td bgcolor="orange"  align="center">
+
+<h3 align="center"><font color="#fff">Join here</font> </h3>
+<br><br>
+<address> To register yourself:
+link:-<a href="Contact us.html">
+<b>Click Here</b></a>
+<p>ID  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<input type="text"/></p>
+
+<p>
+Password :<input type="password"/></p>
+
+<img src="images.jpg" width="200px" height="250" align="center"/>
+<br><br>
+</td>
+
+</tr>
+
+<tr height="80px">
+<td colspan="3" bgcolor="gray" align="center">
+
+
+All Right Reserved &copy; Thank you
+
+</td>
+
+
+</tr>
+
+
+
+</table>
+
+
+
+</body>
+</html>
